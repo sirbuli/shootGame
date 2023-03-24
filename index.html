@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoot Game</title>
+
+    <link rel="stylesheet" href="src/scss/main.scss" />
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <script type="module" src="src/js/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-header">
+        <img class="logo" alt="ShootGame logo" src="src/img/logo.jpg" />
+
+        <div class="header">
+          <form class="search">
+            <input
+              type="text"
+              class="search__field"
+              placeholder="Search your game.."
+            />
+            <button class="btn search__btn">
+              <svg class="search__icon">
+                <use href="src/img/icons.svg#icon-search"></use>
+              </svg>
+              <span>Search</span>
+            </button>
+          </form>
+
+          <nav class="main-nav">
+            <div class="main-nav__list">
+              <a class="main-nav__link" href="#1">Home</a>
+              <hr />
+              <a class="main-nav__link" href="#4">Guilds</a>
+              <hr />
+              <a class="main-nav__link" href="#4">Markets</a>
+              <hr />
+
+              <div class="dropdown">
+                <a class="main-nav__link" href="#3">
+                  <div class="main-nav__link">
+                    <span>Networks</span>
+                    <!-- <ion-icon name="arrow-dropdown"></ion-icon> -->
+                  </div>
+                </a>
+
+                <ul>
+                  <li><a class="dropdown__link" href="#5">Ethereum</a></li>
+                  <li><a class="dropdown__link" href="#6">Polygon</a></li>
+                  <li>
+                    <a class="dropdown__link" href="#7">Arbitrum Nova</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <button class="btn-mobile-nav"></button>
+        </div>
+      </header>
+      <hr />
+
+      <section class="main-section">
+        <div class="static-nav">
+          <div class="static-nav__info">
+            <div class="static-nav__info__name">
+              <img src="https://img.icons8.com/emoji/48/null/rocket-emji.png" />
+              <p>Gainers</p>
+            </div>
+            <div class="static-nav__info__grid">
+              <div class="static-nav__info__data">
+                <ul>
+                  <li class="static-nav__info__data1">Illuvium</li>
+                  <li class="static-nav__info__data2">Momoguro</li>
+                  <li class="static-nav__info__data3">Axie Infinity</li>
+                </ul>
+              </div>
+              <div class="static-nav__info__data">
+                <ul>
+                  <li class="static-nav__info__price1">$83.02</li>
+                  <li class="static-nav__info__price2">$15.55</li>
+                  <li class="static-nav__info__price3">$3.33</li>
+                </ul>
+              </div>
+              <div class="static-nav__info__data">
+                <ul>
+                  <li class="static-nav__info__procent1">22.3%</li>
+                  <li class="static-nav__info__procent2">12.5%</li>
+                  <li class="static-nav__info__procent3">2.3%</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="static-nav__info">
+            <div class="static-nav__info__name">
+              <img src="https://img.icons8.com/emoji/48/null/fire.png" />
+              <p>Trending</p>
+            </div>
+            <div class="static-nav__info__grid">
+              <div class="static-nav__info__data">
+                <ul>
+                  <li class="static-nav__info__data1">Bluzelle</li>
+                  <li class="static-nav__info__data2">Momoguro</li>
+                  <li class="static-nav__info__data3">ImmutableX</li>
+                </ul>
+              </div>
+              <div class="static-nav__info__data">
+                <ul>
+                  <li class="static-nav__info__price1">$0.029</li>
+                  <li class="static-nav__info__price2">$15.55</li>
+                  <li class="static-nav__info__price3">$0.99</li>
+                </ul>
+              </div>
+              <div class="static-nav__info__data">
+                <ul>
+                  <li class="static-nav__info__procent1">3.3%</li>
+                  <li class="static-nav__info__procent2">22.3%</li>
+                  <li class="static-nav__info__procent3">7.3%</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="static-nav__info">
+            <div class="static-nav__info__name">Market Capitalization</div>
+            <div class="static-nav__info__data static-nav__info__cap">
+              $12,048,870,344
+            </div>
+          </div>
+
+          <div class="static-nav__info">
+            <div class="static-nav__info__name">24h Volume</div>
+            <div class="static-nav__info__data static-nav__info__cap">
+              $2,048,870,344
+            </div>
+          </div>
+        </div>
+        <div class="site-welcome">
+          <div class="text-box">
+            <h1 class="heading-primary">
+              <p>Do you want to <span>shoot</span></p>
+              <p>your <span>game?</span></p>
+            </h1>
+            <div class="welcome-description">
+              <div class="icon-container">
+                <ion-icon name="arrow-round-forward"></ion-icon>
+                <p>Find the games from web3 environment at all chains</p>
+              </div>
+
+              <div class="icon-container">
+                <ion-icon name="arrow-round-forward"></ion-icon>
+                <p>
+                  Look at the most important information about your favourite
+                  game
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="slider">
+            <div class="slide slide--1">
+              <img
+                src="src/img/img-hero-1.png"
+                class="image-hero"
+                alt="Characters from Illuvium game"
+              />
+            </div>
+            <div class="slide slide--2">
+              <img
+                src="src/img/img-hero-2.png"
+                class="image-hero"
+                alt="Characters from Legends of Elysium game"
+              />
+            </div>
+            <div class="slide slide--3">
+              <img
+                src="src/img/img-hero-3.png"
+                class="image-hero"
+                alt="Characters from Momoguro game"
+              />
+            </div>
+            <div class="slide slide--4">
+              <img
+                src="src/img/img-hero-4.jpg"
+                class="image-hero"
+                alt="Characters from Big Time game"
+              />
+            </div>
+            <div class="slide slide--5">
+              <img
+                src="src/img/img-hero-5.png"
+                class="image-hero"
+                alt="Ship from StarHeroes game"
+              />
+            </div>
+            <div class="dots"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
