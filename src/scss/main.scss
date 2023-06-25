@@ -126,6 +126,7 @@ hr {
 
 .dropdown {
   position: relative;
+  z-index: 9999;
 
   & a:focus + ul,
   & a:hover + ul,
@@ -273,8 +274,8 @@ hr {
   grid-template-columns: 1fr 1fr;
   gap: 6.4rem;
   align-items: 9.6rem;
-  margin: 0.5rem auto;
-  padding: 0 3rem;
+  margin: 0.5rem auto 0 auto;
+  padding: 0 0.3rem;
 }
 
 .heading-primary {
@@ -386,4 +387,98 @@ hr {
   backdrop-filter: blur(4px);
   z-index: 100;
   transition: all 0.5s;
+}
+
+//////////////////////////////////////////////
+///////////       FOOTER        //////////////
+//////////////////////////////////////////////
+
+footer {
+  background-color: #12111f;
+  padding: 20px;
+  color: #6a6969;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 75px;
+}
+
+.footer-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-menu ul li:last-child {
+  margin-right: 0;
+}
+
+.footer-menu ul li a {
+  text-decoration: none;
+  color: #6a6969;
+}
+
+.social-links a {
+  margin-right: 10px;
+  color: #6a6969;
+  font-size: 20px;
+}
+
+.social-links a:hover {
+  color: #666;
+}
+
+.social-links i {
+  font-size: 20px;
+  padding: 5px;
+}
+
+.social-links i:hover {
+  color: #666;
+}
+
+.footer-container .social-links {
+  display: flex;
+}
+
+.footer-container .social-links a {
+  display: flex;
+  align-items: center;
+}
+
+.footer-container .social-links a:first-child {
+  margin-left: 0;
+}
+
+.footer-container .social-links a:last-child {
+  margin-right: 0;
+}
+
+.footer-container .social-links a:hover {
+  transform: scale(1.2);
+}
+
+.footer-container .social-links a:hover i {
+  color: #666;
+}
+
+.social-links i {
+  transition: all 0.3s ease;
+}
+
+.social-links i:hover {
+  transform: scale(1.2);
 }
