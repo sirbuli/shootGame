@@ -275,6 +275,7 @@ hr {
   gap: 6.4rem;
   align-items: 9.6rem;
   margin: 0.5rem auto 0 auto;
+  margin-bottom: 5rem;
   padding: 0 0.3rem;
 }
 
@@ -323,10 +324,16 @@ hr {
 
 .slider {
   max-width: 100rem;
-  height: 50rem;
+  height: auto;
 
   position: relative;
   overflow: hidden;
+}
+
+.slides-container {
+  display: flex-end;
+  align-items: center;
+  justify-content: center;
 }
 
 .slide {
@@ -347,12 +354,13 @@ hr {
 }
 
 .dots {
-  display: flex;
-
-  position: absolute;
-  top: 46%;
-  left: 50%;
-  transform: translateX(-50%);
+  &__container {
+    justify-content: center;
+    position: absolute;
+    transform: translateX(100%);
+    z-index: 9999;
+    bottom: 0;
+  }
 
   &__dot {
     border: none;
@@ -389,13 +397,60 @@ hr {
   transition: all 0.5s;
 }
 
+.news__title {
+  padding: 2rem;
+  font-size: 3.2rem;
+  color: #d6c5c5;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 30rem;
+}
+
+.swiper-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.swiper-slide {
+  background-color: #ad7959;
+  border: 5px solid #ad7959;
+  border-radius: 10px;
+  display: flex-end;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.slide-content {
+  justify-content: center;
+  padding: 10px;
+  color: #fff;
+}
+
+.slide-content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.slide-content p {
+  font-size: 14px;
+}
+
 //////////////////////////////////////////////
 ///////////       FOOTER        //////////////
 //////////////////////////////////////////////
 
 footer {
   background-color: #12111f;
-  padding: 20px;
+  padding: 0 1rem 0.5rem 1rem;
   color: #6a6969;
 }
 
